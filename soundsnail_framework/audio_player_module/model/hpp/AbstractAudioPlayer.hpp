@@ -2,7 +2,7 @@
 
 #include <string>
 #include "AudioPlayerState.hpp"
-
+#include "PlaybackRate.hpp"
 namespace sound_snail {
 
 class AbstractAudioPlayer {
@@ -25,8 +25,8 @@ public:
     virtual int get_position() const = 0;
     virtual int get_duration() const = 0;
 
-    virtual void set_playback_rate(float a_rate) = 0;
-    virtual float get_playback_rate() const = 0;
+    virtual void set_playback_rate(PLAYBACK_RATE a_rate) = 0;
+    virtual PLAYBACK_RATE get_playback_rate() const = 0;
 };
 
 } // namespace sound_snail 
